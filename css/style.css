@@ -1,0 +1,58 @@
+
+	*{
+	margin: 0px;
+	padding: 0px;
+	}
+	
+	body {
+		background: rgba(216,225,231,1) 50%;
+		background: -webkit-linear-gradient(left, rgba(242,246,248,1) 0%, rgba(216,225,231,1) 50%, rgba(181,198,208,1) 51%, rgba(224,239,249,1) 100%);
+		background: linear-gradient(left, rgba(242,246,248,1) 0%, rgba(216,225,231,1) 50%, rgba(181,198,208,1) 51%, rgba(224,239,249,1) 100%); 
+		}
+
+		
+	
+	#image {
+		position: relative;
+		z-index: -1
+	}
+	#content {
+		height: 750px;
+		width: 100%;
+		margin-top:-10px; 
+		background-color:#4ECDC4;
+		position: relative;
+		z-index: 1;
+	}
+	
+	
+	/* navbar */
+	.navbar-inverse {
+		border: none;
+		background: #4ECDC4;
+		background: -webkit-linear-gradient(to left, #4ECDC4, #556270);
+		background: linear-gradient(to left, #4ECDC4, #556270); }
+		
+	.navbar-collapse {
+		color: #063444; 
+		}
+
+	.container {
+		height: 10px; 
+		}
+
+	.navbar-inverse .container .navbar-nav > li > a:hover {
+		color: #063444;
+	}
+		
+	.navbar-inverse .container .navbar-nav > li > a {
+  background: #556270;
+  
+  height: auto;
+  width: auto; }
+	
+
+
+
+
+
