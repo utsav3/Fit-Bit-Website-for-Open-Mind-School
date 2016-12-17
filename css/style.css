@@ -31,7 +31,11 @@
 		border: none;
 		background: #4ECDC4;
 		background: -webkit-linear-gradient(to left, #4ECDC4, #556270);
-		background: linear-gradient(to left, #4ECDC4, #556270); }
+		background: linear-gradient(to left, #4ECDC4, #556270); 
+		position: fixed; 
+		width: 100%;
+		height: 40px;
+		}
 		
 	.navbar-collapse {
 		color: #063444; 
@@ -47,8 +51,9 @@
 		
 	.navbar-inverse .container .navbar-nav > li > a {
   background: #556270;
-  
   height: auto;
+  
+  
   width: auto; }
 	
 
