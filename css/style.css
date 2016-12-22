@@ -27,6 +27,31 @@
 		
 	}
 	
+	.star {
+        visibility: hidden;
+		margin-left: 585px;
+		margin-top: 230px;
+    }
+
+    .fadeIn {
+        -webkit-animation: animat_show 8s;
+        animation: animat_show 8s;
+        visibility: visible !important;
+    }
+	
+	.fadeOut {
+        -webkit-animation: animat_hide 8s;
+        animation: animat_hide 8s;
+        visibility: invisible !important;
+    }
+
+    @-webkit-keyframes animat_show{
+        0%{opacity:0}
+        100%{opacity:1}
+    }	
+	
+	
+	
 	 /* image position and width */
 	#content {
 		height: 750px;
@@ -49,17 +74,15 @@
 		height: 40px;
 		}
 		
-	.navbar-collapse {
-		color: #063444; 
+		.example4 {
+			position: fixed;
+			width : 100%
 		}
-
-	.container {
-		height: 10px; 
+		.example4 .navbar-brand>img {
+		padding: 7px 14px;
 		}
-
-	.navbar-inverse .container .navbar-nav > li > a:hover {
-		color: #063444;
-	}
+		
+	
 		
 	.navbar-inverse .container .navbar-nav > li > a {
   background: #556270;
