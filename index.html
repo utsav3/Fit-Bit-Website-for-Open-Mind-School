@@ -1,60 +1,63 @@
 <!DOCTYPE html>
-
-<html>
-
-	<head>
-		
-		<meta charset"UTF-8">
-		<meta name="discription" content="Open Mind School">
-		<meta name="author" content="Utsav Dhungel">
-		<title>Utsav Dhungel</title>
-		
-		
-		<!-- Latest compiled and minified CSS -->
+<html lang="en">
+  <head>
+	   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+       <title>Fit Bit Physical Exercise</title>
+       <link rel="stylesheet" href="css/style.css"/>
+	   <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	   
+	   <!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 		<!-- Optional theme -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 	
-		<!-- Custom CSS -->
-		 <link rel="stylesheet" type="text/css" href="css/style.css" />
-		 
-		 <!-- Font -->
-		 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>
-
-		
-		<!-- Modernizer -->
-		<script src="js/modernizr-2.6.2.min.js"></script>
-		
-		<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
-		
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>	
-		
-		<!-- Simple Parallex -->
-		 <script src="js/jquery.stellar.js"></script>
-		<script src="js/scrip.js"></script>
-		<script src="js/jquery.nicescroll.js"></script>
-
-		
-		
-			
-		
-		<script>
-		$(function(){
-		$("#header").load("header.html");
-		});
-		</script>
-		
-		
-		
-	</head>
+       <link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
+	   <link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
+	   <link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>	
+	   <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	   <link href='http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911' rel='stylesheet' type='text/css'>
+		<script src="js/script.js"></script> 
+	<script>
 	
-	<body>
+<!----- JQUERY FOR SLIDING NAVIGATION --->   
+		$(document).ready(function() {
+  		$('a[href*=#]').each(function() {
+    		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+    			&& location.hostname == this.hostname
+    			&& this.hash.replace(/#/,'') ) {
+      			var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+      			var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+       		
+			if ($target) {
+         		var targetOffset = $target.offset().top;
+
+<!----- JQUERY CLICK FUNCTION REMOVE AND ADD CLASS "ACTIVE" + SCROLL TO THE #DIV--->   
+         		$(this).click(function() {
+				$("#nav li a").removeClass("active");
+				$(this).addClass('active');
+           		$('html, body').animate({scrollTop: targetOffset}, 1000);
+           		return false;
+         		});
+      		}
+		}
+	});
+
+});
+	</script>
 	
-	<div id="header"></div>
+	
+
+</head> 
+	
+<body>
+
+
+<!----- HEADER START--->   
+<div id="header"></div>
 	
 	<!-- Navigation bar Using Bootstrap -->
-	<div class="container example4">
+	<div class="container navbar1">
 		<nav class="navbar navbar-default">
 			<div class="container-fluid">
 				<div class="navbar-header">
@@ -65,47 +68,64 @@
 						<span class="icon-bar"></span>
 					</button>
         
-		<a class="navbar-brand" href=""><img style="	width: 64px;" src="http://i.amz.mshcdn.com/UD-KASEmF9tLG5TaqmEQQL_LJrc=/fit-in/1200x9600/https%3A%2F%2Fblueprint-api-production.s3.amazonaws.com%2Fuploads%2Fcard%2Fimage%2F122081%2FS-Skype-logo.png" alt="Dispute Bills">
-        </a>
-      </div>
-      <div id="navbar4" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Contacts</a></li>
-          <li><a href="#">Video Gallery</a></li>
-          <li><a href="#">Testimonials</a></li>
-          
-        </ul>
-      </div>
-      <!--/.nav-collapse -->
-    </div>
+					<a class="navbar-brand" href=""><img style="	width: 64px;" src="http://i.amz.mshcdn.com/UD-KASEmF9tLG5TaqmEQQL_LJrc=/fit-in/1200x9600/https%3A%2F%2Fblueprint-api-production.s3.amazonaws.com%2Fuploads%2Fcard%2Fimage%2F122081%2FS-Skype-logo.png" alt="Dispute Bills">
+					</a>
+				</div>
+				<div id="navbar4" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Contacts</a></li>
+					<li><a href="#">Video Gallery</a></li>
+					<li><a href="#">Testimonials</a></li>
+				</ul>
+				</div>
+      
+	  <!--/.nav-collapse -->
+			</div>
     <!--/.container-fluid -->
-  </nav>
-</div>
+		</nav>
 
+	</div>	
+<!----- HEADER END--->   
 
-		
-		<image src="Images/Boy.svg" height="180" width="269" class="fixed" />
-		
-		
-		
-		<img id="image" src="Images/Screen1.png" height="710px" width="100%" />
-		
-		<div id="smiley">
-        <div id="star">
-            <img src="Images/Dumbbell.png" class="star" height="50" width="100">
-        </div>
-		</div>
-		
-		<img id="image" src="Images/Screen2.png" height="710px" width="100%" />
-		
-		<img id="image" src="Images/Screen3.png" height="710px" width="100%" />
-		<!-- <div id="content"></div> -->
-		
-		
-	
-	
-	</body>
-	
-	
+<!----- SLIDES START --->   	
+	<div id="slide1">
+		<div class="content">
+			 <image src="img/Boy.png" height="180" width="269" class="fixed" />
+		</div> 
+    </div> 
 
+	<div id="slide2">
+		<div class="content" >
+             
+		</div> 
+    </div> 
+	
+	
+   <div id="slide3">
+		<div class="content">
+			  
+		</div> 
+    </div> 
+	
+	
+	<div id="slide4">
+		<div class="content">
+
+		</div> 
+    </div> 
+	
+	
+	<div id="slide5">
+		<div class="content">
+           <div class="quotes_container">
+		    <h3 class="quotes">We Can place the text content in this................   </h3>
+		  </div> 
+		</div> 
+		
+
+    </div> 
+	
+<!----- SLIDES END --->
+
+</body>
 </html>
