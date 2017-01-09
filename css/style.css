@@ -94,6 +94,8 @@ a.rpanel:hover{ color: #fff; }
 
 
 
+
+
 /*= QUOTES AND SOME ELEMENTS
 --------------------------------------------------------*/
 .quotes {   
@@ -123,49 +125,31 @@ a.rpanel:hover{ color: #fff; }
 /*= BUTTONS
 --------------------------------------------------------*/
 
-button.btn-know { 
-	padding: 15px 47px; 
-	margin: 40px 38.8%;
-	text-align: center;
-	border: 4px solid #fff; 
-	color: #fff; 
-	background: transparent; 
-	font-size: 19px;
-	cursor: pointer;
-	text-shadow: -1px 2px 0px rgba(90, 90, 90, 0.56);
-	-webkit-border-radius: 4px;
-	border-radius: 4px;
-}
 
-.btn-know:hover { background: #fff; color: transparent; }
-ul.built { list-style: none; margin: 0 auto; width: 730px; }
-.built li img{ float: left; padding-right: 34px; }
 
 
 
 /*= SLIDES STYLING
 --------------------------------------------------------*/
 
-#slide1, #slide2{ width: 100%; }
+
 #slide1{
-	background:url('../img/Screen1.png') 100% 0 no-repeat fixed;
+	background:url('../img/Screen1.png') no-repeat center fixed;
 	color: #fff;
-	height: 800px;
+	height: 1200px;
 	padding: 200px 0 260px 0;
 	background-size: cover;
+	width: 100%;
 }
 
 #slide2{
-	background-color: #fff;
-	color: #333333;
-	height: 300px;
-	margin: 0 auto;
-	overflow: hidden;
-	padding: 200px 0;
+	
+	
+	
 }
 
 #slide3{
-	background: url(../img/Screen2.png) 100% 0 no-repeat fixed;
+	background: url(../img/Screen2.png) no-repeat center fixed;
 	color: #fff;
 	height: 800px;
 	padding: 170px 0 0 0;	
@@ -180,14 +164,26 @@ ul.built { list-style: none; margin: 0 auto; width: 730px; }
 }
 
 #slide5{
-	background: url(../img/Screen3.png) 100% 0 no-repeat fixed;
+	background: url(../img/Screen3.png) no-repeat center fixed;
 	height: 800px;
-	margin: 0 auto;
-	padding: 250px 0;
-	color: #fff;
+	padding: 200px 0 260px 0;
 	background-size: cover;
+	width: 100%;
 }
 
+.standing_boy{
+	display:none;
+	height: 800px;
+	padding: 0px 80px 100px 180px;
+}
+
+.boy_weights1{
+	
+	height: 800px;
+	padding-top: 350px;
+	padding-left: 550px;
+	position: fixed;
+}
 
 /*= FOOTER 
 --------------------------------------------------------*/

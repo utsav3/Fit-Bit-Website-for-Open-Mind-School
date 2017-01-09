@@ -44,6 +44,33 @@
 	});
 
 });
+
+$(window).scroll(function() {
+  if ($(this).scrollTop() > 0) {
+    $('.standing_boy').fadeIn();
+  }
+  else {
+    $('.standing_boy').fadeOut();
+	
+  }
+});
+
+
+$(window).scroll(function() {
+  if ($(this).scrollTop() > 2) {
+    $('.boy_weights1').fadeIn();
+  }
+  else {
+   
+	
+  }
+});
+
+$(window).scroll(function() {    
+        var scroll = $(window).scrollTop();
+            $('.standing_boy').css({'opacity':(( 180-scroll )/100)+0.1});
+			$('.boy_weights1').css({'opacity':(( 360-scroll )/100)+0.1});
+        });
 	</script>
 	
 	
@@ -89,22 +116,26 @@
 
 <!----- SLIDES START --->   	
 	<div id="slide1">
-		<div class="content">
+		<div class="standing_boy">
 			 <image src="img/Boy.png" height="180" width="269" class="fixed" />
 		</div> 
+		<div class="boy_weights1">
+			 <image src="img/Boy_Weights1.png" height="180" width="269"  />
+		</div>	
+			
     </div> 
-
+	
+	
+	
 	<div id="slide2">
-		<div class="content" >
-             
-		</div> 
-    </div> 
+		
+    </div>
+
+	
 	
 	
    <div id="slide3">
-		<div class="content">
-			  
-		</div> 
+				 
     </div> 
 	
 	
