@@ -56,20 +56,12 @@ $(window).scroll(function() {
 });
 
 
-$(window).scroll(function() {
-  if ($(this).scrollTop() > 2) {
-    $('.boy_weights1').fadeIn();
-  }
-  else {
-   
-	
-  }
-});
+
 
 $(window).scroll(function() {    
         var scroll = $(window).scrollTop();
             $('.standing_boy').css({'opacity':(( 180-scroll )/100)+0.1});
-			$('.boy_weights1').css({'opacity':(( 360-scroll )/100)+0.1});
+			
         });
 	</script>
 	
@@ -119,13 +111,17 @@ $(window).scroll(function() {
 		<div class="standing_boy">
 			 <image src="img/Boy.png" height="180" width="269" class="fixed" />
 		</div> 
-		<div class="boy_weights1">
+		
+		
+		<div id="boy2">
+		<div id="boy_weights1">
 			 <image src="img/Boy_Weights1.png" height="180" width="269"  />
-		</div>	
+		</div>
+	</div>
 			
     </div> 
 	
-	
+		
 	
 	<div id="slide2">
 		
