@@ -134,7 +134,7 @@ a.rpanel:hover{ color: #fff; }
 
 
 #slide1{
-	background:url('../img/Screen1.png') no-repeat center fixed;
+	background:url('../img/Screen1.png') 100% 0 no-repeat fixed;
 	color: #fff;
 	height: 1200px;
 	padding: 200px 0 260px 0;
@@ -149,7 +149,7 @@ a.rpanel:hover{ color: #fff; }
 }
 
 #slide3{
-	background: url(../img/Screen2.png) no-repeat center fixed;
+	background: url(../img/Screen2.png) 100% 0 no-repeat fixed;
 	color: #fff;
 	height: 800px;
 	padding: 170px 0 0 0;	
