@@ -133,7 +133,7 @@ a.rpanel:hover{ color: #fff; }
 --------------------------------------------------------*/
 
 
-#slide1{
+#bg1{
 	background:url('../img/Screen1.png') 100% 0 no-repeat fixed;
 	color: #fff;
 	height: 1200px;
@@ -148,7 +148,7 @@ a.rpanel:hover{ color: #fff; }
 	
 }
 
-#slide3{
+#bg2{
 	background: url(../img/Screen2.png) 100% 0 no-repeat fixed;
 	color: #fff;
 	height: 800px;
@@ -163,7 +163,7 @@ a.rpanel:hover{ color: #fff; }
 	padding: 200px 0;
 }
 
-#slide5{
+#bg3{
 	background: url(../img/Screen3.png) no-repeat center fixed;
 	height: 800px;
 	padding: 200px 0 260px 0;
@@ -171,19 +171,39 @@ a.rpanel:hover{ color: #fff; }
 	width: 100%;
 }
 
-.standing_boy{
+/*#standing_boy{
+	position:fixed;
+	 
 	
-	height: 800px;
-	padding: 0px 80px 100px 180px;
-}
-
-#boy_weights1{
-	
-	height: 800px;
-	
-	padding-left: 550px;
+	top:240px;
+	left:500px;
 	
 }
 
+#boy_2{
+	
+	position:fixed;
+	 
+	
+	top:440px;
+	left:500px;
+	
+}
+#boy_3{
+	
+	position:fixed;
+	 
+	
+	top:440px;
+	left:500px;
+	
+}
+*/
 
-
+.left {
+  position: fixed;
+  z-index: 1000;
+  top: 260px;
+  left: 550px;
+  display: none;
+}

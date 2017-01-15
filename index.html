@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head  class="no-skrollr">
 	   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
        <title>Fit Bit Physical Exercise</title>
        <link rel="stylesheet" href="css/style.css"/>
-	   <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	   <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
 	   
 	   <!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -63,7 +63,58 @@ $(window).scroll(function() {
             $('.standing_boy').css({'opacity':(( 180-scroll )/100)+0.1});
 			
         });
-	</script>
+		
+/*$(function(){
+    $(window).scroll(function(){
+        if($(this).scrollTop() > 100) {
+            $('#topbar, .cart-label').fadeOut('slow');
+            $('#standing_boy img')
+                .css({'width':'284px','height':'133px'})
+				.attr('src','..\Users\dhungel\Desktop\Open Mind School\Fit-Bit-Website-for-Open-Mind-School\img\Boy_Weights1.png');
+        }
+        if($(this).scrollTop() < 100) {
+            $('#logo, #topbar, .cart-label').fadeIn('fast');
+            $('#standing_boy img')
+                .css({'width':'284px','height':'160px'})    
+                .attr('src','..\Users\dhungel\Desktop\Open Mind School\Fit-Bit-Website-for-Open-Mind-School\img\Boy_Weights1.png');
+        }
+    });
+});*/
+
+
+$("#c1").fadeIn(1000);
+$(document).scroll(function() {
+  var pos = $(document).scrollTop();
+  if (pos < 300) {
+    hideAll("standing_boy");
+    $("#standing_boy").fadeIn(1000);
+  }
+  if (pos > 400 && pos < 1000) {
+    hideAll("boy_2");
+    $("#boy_2").fadeIn(1000);
+  }
+    if (pos > 1100 && pos < 1500) {
+    hideAll("boy_3");
+    $("#boy_3").fadeIn(1000);
+  }
+});
+
+function hideAll(exceptMe) {
+  $(".left").each(function(i) {
+    if ($(this).attr("id") == exceptMe) return;
+    $(this).fadeOut();
+  });
+}
+
+		
+
+		
+		
+		
+		
+		
+		
+</script>
 	
 	
 
@@ -107,52 +158,22 @@ $(window).scroll(function() {
 <!----- HEADER END--->   
 
 <!----- SLIDES START --->   	
-	<div id="slide1">
-		<div class="standing_boy">
-			 <image src="img/Boy.png" height="180" width="269" class="fixed" />
-		</div> 
-		
-		
-		<div id="boy2">
-		<div id="boy_weights1">
-			 <image src="img/Boy_Weights1.png" height="180" width="269"  />
-		</div>
-	</div>
-			
-    </div> 
-	
-		
-	
-	<div id="slide2">
-		
-    </div>
-
-	
-	
-	
-   <div id="slide3">
-				 
-    </div> 
-	
-	
-	<div id="slide4">
-		<div class="content">
-
-		</div> 
-    </div> 
-	
-	
-	<div id="slide5">
-		<div class="content">
-           <div class="quotes_container">
-		    <h3 class="quotes">We Can place the text content in this................   </h3>
-		  </div> 
-		</div> 
-		
-
-    </div> 
+	<div id="skrollr-body">
+		<div id="Scene">
+            <div id="bg1" class="parallax-layer" data-0="left:0px;" data-5000="left:-1000px;"></div>
+            <div id="bg2" class="parallax-layer" data-0="left:0px;" data-5000="left:-2500px;"></div>
+			<div id="bg3" class="parallax-layer" data-0="left:0px;" data-5000="left:-1000px;"></div>			
+        </div>
+     </div>
+	 
+				<div id="standing_boy" class="left" > <img src="img/Boy.png" height="180" width="269" /></div>
+			    <div id="boy_2" class="left"> <image src="img/Boy_Weights1.png" height="180" width="269" /></div>
+				<div id="boy_3" class="left"> <image src="img/Boy_Weights2.png" height="180" width="269" /></div>
+	 
+	 
 	
 <!----- SLIDES END --->
-
+<script type="text/javascript" src="js/skrollr.min.js"></script>
+<script type="text/javascript" src="js/wdmain.js"></script>
 </body>
 </html>
