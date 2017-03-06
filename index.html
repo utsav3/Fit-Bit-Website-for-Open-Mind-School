@@ -85,29 +85,31 @@ $(window).scroll(function() {
 $("#c1").fadeIn(500);
 $(document).scroll(function() {
   var pos = $(document).scrollTop();
-  if (pos < 100) {
+  if (pos < 100 && pos < 400) {
     hideAll("standing_boy");
     $("#standing_boy").fadeIn(500);
   }
-  if (pos > 300 && pos < 600) {
+  if (pos > 500 && pos < 900) {
     hideAll("boy_2");
     $("#boy_2").fadeIn(500);
   }
-    if (pos > 850 && pos < 1200) {
+    if (pos > 1000 && pos < 1350) {
     hideAll("boy_3");
     $("#boy_3").fadeIn(500);
   }
   
-   if (pos > 1300 && pos < 1500) {
+   if (pos > 1450 && pos < 1800) {
     hideAll("boy_4");
     $("#boy_4").fadeIn(500);
-	 
-   if (pos > 1600) {
+   } 
+   if (pos > 1900 && pos < 2500) {
     hideAll("boy_5");
     $("#boy_5").fadeIn(500);
   }
-  }
+  
+  
 });
+
 
 function hideAll(exceptMe) {
   $(".left").each(function(i) {
@@ -141,6 +143,8 @@ function hideAll(exceptMe) {
 		<nav class="navbar navbar-default">
 			<div class="container-fluid">
 				<div class="navbar-header">
+				<a class="navbar-brand" href=""><img style="	 width: 80px;" src="img/logo.png" alt="Fit Bit">
+				</a>
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar4">
 						<span class="sr-only">Toggle navigation</span>
 						<span class="icon-bar"></span>
@@ -148,8 +152,7 @@ function hideAll(exceptMe) {
 						<span class="icon-bar"></span>
 					</button>
         
-					<a class="navbar-brand" href=""><img style="	width: 64px;" src="http://i.amz.mshcdn.com/UD-KASEmF9tLG5TaqmEQQL_LJrc=/fit-in/1200x9600/https%3A%2F%2Fblueprint-api-production.s3.amazonaws.com%2Fuploads%2Fcard%2Fimage%2F122081%2FS-Skype-logo.png" alt="Dispute Bills">
-					</a>
+					
 				</div>
 				<div id="navbar4" class="navbar-collapse collapse">
 				<ul class="nav navbar-nav">
@@ -172,17 +175,39 @@ function hideAll(exceptMe) {
 		<div id="Scene">
             <div id="bg1" class="parallax-layer" data-0="left:0px;" data-5000="left:-1000px;"></div>
             <div id="bg2" class="parallax-layer" data-0="left:0px;" data-5000="left:-2500px;"></div>
-			<div id="bg3" class="parallax-layer" data-0="left:0px;" data-5000="left:-1000px;"></div>			
+			<div id="bg3" class="parallax-layer" data-0="left:0px;" data-5000="left:-1000px;"></div>
+			<div class="quotes">
+					<p>
+					About:<br>
+
+					Bay Area Specialfit is an inclusive fitness program for children, teens, and adults in the Bay Area community. Programs have a strong emphasis on principles of human movement, human capacity, and physical literacy while scaffolding support for individual differences. Individual and group classes aim to improve the quality of life for individuals through the development of relationships, the implementation of functional fitness, and integration into a welcoming and inclusive gym environment. Our mission is to expand the current paradigm focused primarily on traditional occupational and physical therapy interventions and adapted PE; to include fitness training and regular workouts. The goal is to create a program that will greatly enhance longevity and elevate the quality of physical activity throughout all stages of a person’s lifetime.By emphasizing fitness as a whole, we hope to support more positive, confident, and able-bodied individuals. 
+					<br>
+					<br>
+					Our Trainers
+					<br>
+					We have 3 trainers to profile.
+					<br><br>
+					Testimonials<br>
+					3 testimonials
+					<br><br>
+					Gallery<br>
+					Photos and videos gallery
+					<br><br>
+					Contact<br>
+					Phone number and email address only.
+
+					</p>
+			</div>	
         </div>
      </div>
 	 
-				<div id="standing_boy" class="left" > <img src="img/Boy_Weights1.png" height="180" width="269" /></div>
-			    <div id="boy_2" class="left"> <img src="img/Boy_Weights2.png" height="180" width="269" /></div>
-				<div id="boy_3" class="left"> <img src="img/ClimbingWall2.png" height="180" width="269" /></div>
-				<div id="boy_4" class="left"> <img src="img/ClimbingWall1.png" height="180" width="269" /></div>
-				<div id="boy_5" class="left"> <img src="img/Boyonpodium.png" height="180" width="269" /></div>
+				<div id="standing_boy" class="left" > <img src="img/Boy_Weights1.png" height="300" width="269" /></div>
+			    <div id="boy_2" class="left"> <img src="img/Boy_Weights2.png" height="300" width="269" /></div>
+				<div id="boy_3" class="left"> <img src="img/ClimbingWall2.png" height="300" width="269" /></div>
+				<div id="boy_4" class="left"> <img src="img/ClimbingWall1.png" height="300" width="269" /></div>
+				<div id="boy_5" class="left"> <img src="img/Boyonpodium.png" height="300" width="269" /></div>
 	 
-	 
+ 
 	
 <!----- SLIDES END --->
 <script type="text/javascript" src="js/skrollr.min.js"></script>
